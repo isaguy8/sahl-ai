@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation Video</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Consultation Video</h1>
+    <video id="consultation-video" width="640" height="480" controls>
+        <source src="./vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div id="summary-link" style="display: none;">
+        <a href="./history.html">Summary of Consultation</a>
+    </div>
+    <script>
+        document.getElementById('consultation-video').addEventListener('ended', function() {
+            document.getElementById('summary-link').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

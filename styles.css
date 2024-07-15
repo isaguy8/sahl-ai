@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h2, h3 {
+    color: #555;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#diagnosis-container, #orders-container {
+    margin-top: 10px;
+    display: none;
+}
+
+#saved-diagnoses, #saved-orders {
+    margin-top: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+#custom-diagnosis-dropdown, #custom-order {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* Remove existing edit button styles */
+.edit-button {
+    display: none;
+}
+
+/* New plus button styles */
+.plus-button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 0.8em;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.plus-button:hover {
+    background-color: darkgreen;
+}
+
+#opd {
+    width: 200px;
+    float: left;
+}
+
+#summary {
+    width: 300px;
+    float: left;
+    margin-left: 20px;
+}
+
+#history {
+    width: 300px;
+    float: left;
+    margin-left: 20px;
+}
+
+#history div {
+    margin-top: 20px;
+}
+
+#history input[type="text"] {
+    width: 150px;
+    margin-right: 10px;
+}

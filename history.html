@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of Presentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>History of Presentation</h1>
+    <div>
+        <button onclick="showDiagnosisInput()">Diagnosis</button>
+        <div id="diagnosis-container" style="display: none;">
+            <div id="diagnosis-checklist">
+                <!-- Checklist items will be populated by script -->
+            </div>
+            <select id="custom-diagnosis-dropdown">
+                <option value="">Select a custom diagnosis</option>
+            </select>
+            <button onclick="addCustomDiagnosis()">Add Diagnosis</button>
+            <button onclick="saveDiagnosis()">Enter</button>
+        </div>
+    </div>
+    <div>
+        <button onclick="showOrderInput()">Orders</button>
+        <div id="orders-container" style="display: none;">
+            <div id="order-checklist">
+                <!-- Checklist items will be populated by script -->
+            </div>
+            <input type="text" id="custom-order" placeholder="Enter custom order">
+            <button onclick="saveOrder()">Enter</button>
+        </div>
+    </div>
+    <button onclick="sendToEHR()">Send to EHR</button>
+    <div id="saved-diagnoses">
+        <h2>Saved Diagnoses</h2>
+        <ul id="diagnoses-list"></ul>
+    </div>
+    <div id="saved-orders">
+        <h2>Saved Orders</h2>
+        <ul id="orders-list"></ul>
+    </div>
+</body>
+</html>
